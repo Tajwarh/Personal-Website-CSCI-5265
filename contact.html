@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAJWAR-UL HOQUE - Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+
+  <body data-page="contact">
+    <!-- SAME HEADER AS HOME/WORK -->
+    <header>
+      <h1 class="site-title">TAJWAR-UL HOQUE</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li id="present"><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="nav-btn" href="resume.pdf" target="_blank" download>Resume</a>
+          </li>
+          <li>
+            <button id="toggle-theme" type="button">Dark Theme</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTACT SECTION (LIKE YOUR EXAMPLE) -->
+    <main class="section">
+      <div class="container">
+        <section class="contact-card">
+          <div class="contact-head">
+            <div class="contact-head-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="34" height="34">
+                <path
+                  fill="currentColor"
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"
+                />
+              </svg>
+            </div>
+            <h2 class="contact-head-title">Get in touch.</h2>
+          </div>
+
+          <div class="contact-grid">
+            <!-- LEFT: FORM -->
+            <form
+              class="contact-form2"
+              action="mailto:tajwarhoque13@gmail.com?subject=Message%20from%20your%20website"
+              method="post"
+              enctype="text/plain"
+            >
+              <label class="sr-only" for="name">Name</label>
+              <input id="name" name="Name" type="text" placeholder="Name" required />
+
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" name="Email" type="email" placeholder="Email" required />
+
+              <label class="sr-only" for="message">Message</label>
+              <textarea id="message" name="Message" rows="10" placeholder="Message" required></textarea>
+
+              <button class="contact-send" type="submit">Send Message</button>
+
+            </form>
+
+            <!-- RIGHT: LINKS -->
+            <aside class="contact-side">
+              <p class="contact-side-text">
+                Feel free to reach out via any of the options below!
+              </p>
+
+              <ul class="contact-side-list">
+                <li>
+                  <span class="contact-ico" aria-hidden="true">✉</span>
+                  <a href="mailto:tajwarhoque13@gmail.com">tajwarhoque13@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-ico" aria-hidden="true">📍</span>
+                  <span>Las Cruces, New Mexico, USA</span>
+                </li>
+                <li>
+                  <span class="contact-ico" aria-hidden="true">in</span>
+                  <a
+                    href="https://www.linkedin.com/in/tajwar-ul-hoque/"
+                    target="_blank"
+                    rel="noopener"
+                  >tajwar-ul-hoque</a>
+                </li>
+                <li>
+                  <span class="contact-ico" aria-hidden="true">🐙</span>
+                  <a href="https://github.com/Tajwarh" target="_blank" rel="noopener">Tajwarh</a>
+                </li>
+              </ul>
+
+              <!-- THEME TOGGLE AT END (YOUR REQUEST) -->
+              <div style="margin-top: 16px;">
+                <button id="toggle-theme-bottom" class="btn ghost" type="button">
+                  Toggle Theme
+                </button>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- SAME FOOTER STYLE -->
+    <footer class="home-footer">
+      <p>© 2026 Tajwar-Ul Hoque</p>
+    </footer>
+
+    <!-- IMPORTANT: THEME SCRIPT -->
+    <script src="script.js"></script>
+
+    <!-- Bottom toggle clicks the top toggle -->
+    <script>
+      const topBtn = document.getElementById("toggle-theme");
+      const bottomBtn = document.getElementById("toggle-theme-bottom");
+      if (topBtn && bottomBtn) bottomBtn.addEventListener("click", () => topBtn.click());
+    </script>
+  </body>
+</html>

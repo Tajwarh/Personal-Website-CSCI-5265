@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Tajwar Ul Hoque</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="projects">
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1 class="site-title">TAJWAR-UL HOQUE</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li id="present"><a href="Projects.html">Projects</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a class="nav-btn" href="resume.pdf" target="_blank" download>Resume</a>
+        </li>
+        <li>
+          <button id="toggle-theme">Dark Theme</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== MAIN ===== -->
+  <main class="section alt">
+    <div class="container">
+
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">
+          Academic projects showcasing database systems,
+          machine learning, and game design.
+        </p>
+      </div>
+
+      <!-- ================= DATABASE PROJECT ================= -->
+      <div class="project-card">
+        <h3>Database Project – SQLite: A Solution for Developers</h3>
+
+        <p>
+          Designed and implemented a lightweight database system using SQLite.
+          Focused on efficient query execution and structured data handling.
+        </p>
+
+        <div class="project-links">
+          <a class="btn ghost"
+             href="https://github.com/Tajwarh/Database_sqlLite"
+             target="_blank">GitHub</a>
+
+          <a class="btn ghost"
+             href="https://www.youtube.com/watch?v=rQdxgykZM2I"
+             target="_blank">YouTube Demo</a>
+        </div>
+      </div>
+
+      <!-- ================= DATA MINING PROJECT ================= -->
+      <div class="project-card">
+        <h3>Predicting Customer Churn in the Telecom Industry</h3>
+
+        <p>
+         Customer churn is a major concern for telecom companies because losing customers directly affects revenue. This project uses the Telco Customer Churn dataset from our GitHub repository (https://github.com/Isaiah392/Data-Mining-Customer-Churn) to predict whether a customer will leave based on their demographics, services, contract type, and billing information.
+
+        </p>
+
+        <div class="project-gallery">
+          <div>
+            <img src="img/roc.png" alt="ROC curve for KNN classifier" />
+            <p class="muted small">ROC Curve (KNN)</p>
+          </div>
+
+          <div>
+            <img src="img/feature-analysis.png" alt="Top feature importances" />
+            <p class="muted small">Feature Importance Analysis</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= GAME PROJECT ================= -->
+      <div class="project-card">
+        <h3>Mindhunter – Digital Game Design</h3>
+
+        <p>
+          The main goal of this game is to create a fast-paced platformer that is set within the theme of someone's mind. The player will go through many different levels, thus going through many different phases of the mind.
+        </p>
+
+        <div class="project-gallery">
+          <img src="img/mindhunter.png" alt="Mindhunter gameplay animation" />
+          <p class="muted small">Gameplay Snapshot</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="home-footer">
+    <p>© 2026 Tajwar-Ul Hoque</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
